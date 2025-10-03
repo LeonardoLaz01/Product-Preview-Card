@@ -28,29 +28,16 @@ img {
     border-top-right-radius: 10px;
 }
 
-p {
-    color: var(--Grey);
-    font-family: var(--FontPrimary);
-}
-
-div {
-    text-align: center;
-}
-
-button {
-    background-color: var(--Green500);
-}
-
 .perfumeCard {
     background-color: var(--White);
     margin-top: 80px;
-    height: 750px;
+    margin-bottom: 80px;
     width: 92%;
+    height: auto;
     border-radius: 10px;
 }
 .cardText {
     padding: 25px 37px 1px 25px;
-    text-align: left;
 }
 
 .priceContainer {
@@ -59,6 +46,33 @@ button {
 
 .green {
     color: var(--Green500);
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    color: var(--White);
+}
+
+button {
+    width: 85%;
+    height: 50px;
+    background-color: var(--Green500);
+    border: none;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+button::before {
+    content: url("../Images/icon-cart.svg");
+    width: 16px;
+    height: 16px;
+    display: inline-block;
 }
 
 .text-preset-1 {
@@ -71,10 +85,12 @@ button {
 }
 
 .text-preset-2 {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     line-height: 110%;
     letter-spacing: 0px;
     color: var(--White);
+    font-weight: 600;
+    font-family: var(--FontPrimary);
 }
 
 .text-preset-3 {
@@ -82,6 +98,8 @@ button {
     line-height: 160%;
     letter-spacing: 0px;
     margin-bottom: 20px;
+    font-family: var(--FontPrimary);
+    color: var(--Grey);
 }
 
 .text-preset-4 {
@@ -89,6 +107,8 @@ button {
     line-height: 120%;
     letter-spacing: 5px;
     margin-bottom: 20px;
+    font-family: var(--FontPrimary);
+    color: var(--Grey);
 }
 
 .text-preset-5 {
@@ -98,4 +118,10 @@ button {
     text-decoration: line-through;
     margin-top: 9px;
     margin-left: 15px;
+    font-family: var(--FontPrimary);
+    color: var(--Grey);
+}
+
+@media (min-width: 768px) {
+    
 }
