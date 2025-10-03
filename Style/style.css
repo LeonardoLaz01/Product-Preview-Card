@@ -20,6 +20,8 @@ body {
     background-color: var(--Cream);
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 img {
@@ -30,14 +32,13 @@ img {
 
 .perfumeCard {
     background-color: var(--White);
-    margin-top: 80px;
-    margin-bottom: 80px;
     width: 92%;
     height: auto;
     border-radius: 10px;
 }
 .cardText {
     padding: 25px 37px 1px 25px;
+    margin-bottom: 30px;
 }
 
 .priceContainer {
@@ -52,12 +53,11 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
     color: var(--White);
 }
 
 button {
-    width: 85%;
+    width: 99%;
     height: 50px;
     background-color: var(--Green500);
     border: none;
@@ -66,6 +66,13 @@ button {
     align-items: center;
     justify-content: center;
     gap: 8px;
+    transition: 0.5s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--Green700);
+    transition: 0.5s;
 }
 
 button::before {
@@ -79,18 +86,18 @@ button::before {
     font-size: 2rem;
     line-height: 100%;
     letter-spacing: 0px;
-    font-family: var(--FontSecondary);
     font-weight: 700;
     margin-bottom: 20px;
+    font-family: var(--FontSecondary);
 }
 
 .text-preset-2 {
     font-size: 0.75rem;
     line-height: 110%;
     letter-spacing: 0px;
-    color: var(--White);
     font-weight: 600;
     font-family: var(--FontPrimary);
+    color: var(--White);
 }
 
 .text-preset-3 {
@@ -123,5 +130,35 @@ button::before {
 }
 
 @media (min-width: 768px) {
-    
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .perfumeCard {
+        width: 600px;
+        height: 450px;
+        display: flex;
+    }
+
+    .cardText {
+        width: 236px;
+        margin-left: 4px;
+    }
+
+    .priceContainer {
+        margin-bottom: 20px;
+    }
+
+    .text-preset-3 {
+        margin-bottom: 25px;
+    }
+
+    img {
+        width: auto;
+        height: 100%;
+        border-radius: 7px 0 0 7px;
+    }
 }
