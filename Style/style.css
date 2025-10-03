@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --Green500: hsl(158, 36%, 37%);
+    --Green700: hsl(158, 42%, 18%);
+    --Black: hsl(212, 21%, 14%);
+    --Grey: hsl(228, 12%, 48%);
+    --Cream: hsl(30, 38%, 92%);
+    --White: hsl(0, 0%, 100%);
+    --FontPrimary: 'Montserrat', 'sans-serif';
+    --FontSecondary: 'Fraunces', 'serif';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+p {
+    color: var(--Grey);
+    font-family: var(--FontPrimary);
+}
+
+div {
+    text-align: center;
+}
+
+button {
+    background-color: var(--Green500);
+}
+
+.perfumeCard {
+    background-color: var(--White);
+    margin-top: 80px;
+    height: 750px;
+    width: 92%;
+    border-radius: 10px;
+}
+.cardText {
+    padding: 25px 37px 1px 25px;
+    text-align: left;
+}
+
+.priceContainer {
+    display: flex;
+}
+
+.green {
+    color: var(--Green500);
+}
+
+.text-preset-1 {
+    font-size: 2rem;
+    line-height: 100%;
+    letter-spacing: 0px;
+    font-family: var(--FontSecondary);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.text-preset-2 {
+    font-size: 0.875rem;
+    line-height: 110%;
+    letter-spacing: 0px;
+    color: var(--White);
+}
+
+.text-preset-3 {
+    font-size: 0.875rem;
+    line-height: 160%;
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+}
+
+.text-preset-4 {
+    font-size: 0.75rem;
+    line-height: 120%;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.text-preset-5 {
+    font-size: 0.813rem;
+    line-height: 120%;
+    letter-spacing: 0px;
+    text-decoration: line-through;
+    margin-top: 9px;
+    margin-left: 15px;
+}
